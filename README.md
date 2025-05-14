@@ -18,11 +18,17 @@ Energy-Efficient & Simple Design: Minimal components, maximum impact.
 
 # 🛠️ Components Needed
 Component	Quantity
+
 Arduino UNO	1
+
 Photoresistor (LDR)	1
+
 10kΩ Resistor	1
+
 LED Array / Strip	1
+
 Pushbutton Switch	1
+
 Breadboard & Wires	As needed
 
 # 📝 How It Works
