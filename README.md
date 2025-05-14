@@ -2,49 +2,47 @@
 Auto-Brite is a smart lighting system that dynamically adjusts the brightness of an LED array based on real-time ambient light levels. Using a photoresistor and an Arduino, this project ensures that the LED brightness increases as the environment gets brighter — creating a natural and seamless lighting experience.
 
 ## 🚀 Features
-🔆 Real-time Ambient Light Sensing
-Continuously reads ambient light intensity using a photoresistor.
+Dual Mode Operation: Toggle between:
 
-💡 Adaptive LED Brightness
-LEDs automatically get brighter as surrounding light increases.
+Normal Mode: Brighter ambient light increases LED brightness.
 
-🧠 Smooth Transition Algorithm
-Filters out sudden light changes to prevent flickering.
+Reverse Mode: Brighter ambient light decreases LED brightness.
 
-⚡ Energy-Efficient & Simple Design
-Minimal components, maximum impact.
+Real-time Ambient Light Sensing: Continuously reads ambient light intensity using a photoresistor.
 
-## 🛠️ Components Needed
+Adaptive LED Brightness: LEDs automatically adjust brightness based on surrounding light.
+
+Smooth Transition Algorithm: Filters out sudden light changes to prevent flickering.
+
+Energy-Efficient & Simple Design: Minimal components, maximum impact.
+
+# 🛠️ Components Needed
 Component	Quantity
 Arduino UNO	1
 Photoresistor (LDR)	1
 10kΩ Resistor	1
 LED Array / Strip	1
-Breadboard & Wires	as needed
+Pushbutton Switch	1
+Breadboard & Wires	As needed
 
-## 📝 How It Works
-The photoresistor reads the surrounding light level.
+# 📝 How It Works
+Light Detection: The photoresistor reads the surrounding light level.
 
-The Arduino maps this input to control the LED brightness.
+Brightness Control:
 
-Brighter surroundings → brighter LEDs.
+Normal Mode: Brighter surroundings → brighter LEDs.
 
-Smooth filtering ensures a flicker-free experience.
+Reverse Mode: Brighter surroundings → dimmer LEDs.
 
-## 🧰 Quick Setup
-Connect the photoresistor to analog pin A0 (voltage divider with 10kΩ resistor).
+Mode Switching: A pushbutton switch toggles between Normal and Reverse modes.
 
-Connect the LED array to PWM pin D9 (use transistor if driving high current).
-
-Upload the Auto-Bright Arduino Code.
-
-Power up and watch Auto-Bright adapt in real-time!
+Smooth Dimming: Smooth filtering ensures a flicker-free experience.
 
 ## 🎯 Applications
-Smart Home Lighting
+Smart Home Lighting: Automatically adjusts room lighting based on ambient light conditions.
 
-Mood Lighting for Workspaces
+Mood Lighting for Workspaces: Creates the perfect lighting environment for productivity or relaxation.
 
-Adaptive Display Backlights
+Adaptive Display Backlights: Adjusts screen brightness based on surrounding light to reduce eye strain.
 
-Energy-Saving Light Fixtures
+Energy-Saving Light Fixtures: Dims lights in well-lit areas to conserve energy.
