@@ -21,13 +21,16 @@ void loop() {
     delay(500); 
   }
 
+  ldrValue = analogRead(ldrPin);
+
   if (manualMode) {
-    analogWrite(ledPin, 128);
+    // Invert brightness when manual mode is active
+    ledBrightness = map(ldrValue, 0, 1023, 0, 255);
   } else {
-    ldrValue = analogRead(ldrPin);
+    // LED brightness is directly proportional to ambient light
     ledBrightness = map(ldrValue, 0, 1023, 255, 0);
-    analogWrite(ledPin, ledBrightness);
   }
 
+  analogWrite(ledPin, ledBrightness);
   delay(100); 
 }
